@@ -1,0 +1,353 @@
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background-size: cover;
+	
+	
+	}
+#header-cont {
+	
+	width:100%;
+	background: black; /*holygrail header  */
+	height: 145px;
+   
+}
+#header-cont-left {
+	/*width: 193px;*/
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height:60px;
+	background: black;
+}
+
+#header-cont-right {
+	/*width: 193px;*/
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height:60px;
+	background: black;
+}
+
+#header-cont-center {
+	/*margin: 0 193px;*/
+	/*margin=284+left*/
+	
+}
+
+#logo {
+	float: left;
+	width: 133px;
+	height: 133px;
+	margin-top:12px;
+	margin-bottom:10px;
+	background-color: #002f5d;
+	
+}
+
+#user_image {
+	float: left;
+	background: url("<c:url value = "/resources/themes/finmicro_images/user_image1.png"/>");
+	background-repeat: none;
+	width: 60px;
+	height: 60px;
+	margin-top: 19px;
+}
+
+
+/* Style the tab */
+.headertab {
+	overflow: hidden;
+	float: left;
+	margin-top: 108px;
+    /*margin-left: 118px;*/
+    
+    
+   
+}
+
+/* Style the buttons inside the tab */
+
+
+.tablinks{
+	height: 36px;
+	width: 140px;
+	background:#1a1a1a;
+   	/*border-radius: 5px 5px 0 0;*/
+    transition: background-color 0.01s ease 0s;
+    transition: border 0.01s ease 0s;
+    border: 1px solid #1a1a1a;
+    cursor: pointer;
+    font: normal normal normal 16px/1.4em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    margin-left: -4px;
+    text-align:center;
+    color:#e9e9e9;
+}
+/* Change background color of buttons on hover */
+.headertab button:hover {
+    background-color: black;
+    border: 1px solid black;
+    color:white;
+}
+
+/* Create an active/current tablink class */
+.headertab button.active{
+	color: red;
+}
+
+
+
+/* complete body style starts*/
+
+/* col1 header style starts*/
+
+
+.col1 #col1-wrap{
+	
+	min-width: 980px;
+	width: 65%;
+}
+.col1 #col1_header{
+	
+	height: 65px;
+	margin-bottom: 20px;
+}
+.col1 #col1_header #col1_header_text {
+	
+	color: #DCE28D;
+	font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+	font-size: 24px;
+	float: left;
+}
+.col1 #col1_header #col1_header_ques{
+	float: left;
+	padding-left: 8px;
+	padding-top: 18px;
+	height: 23px;
+	width: 23px;
+	
+}
+
+/* col1 header style ends*/
+
+/* col1 body starts*/
+
+.col1 #col1-wrap #table_catagory{
+	
+	float: left;
+	width: 250px;;
+}
+
+#cust_pers_dets{
+	/*padding-top:55p;*/
+	margin-top: 190px;
+}
+
+#cust_bank_dets{
+	/*padding-top: 255px;*/
+	margin-top: 280px;
+}
+
+#credit_ctrl{
+	/*padding-top: 335px;*/
+	margin-top: 130px;
+}
+.col1 .cat_name_style{
+	
+	color: #DCE28D;
+	font-size: 14px;
+	font-weight: bold;
+}
+.col1 #col1-wrap #table_contents{
+	
+	float: left;
+	width: 600px;
+	
+	/*background-color: beige;*/
+	color: white;
+	
+}
+#table_contents{
+	
+	
+}
+.col1 .txtbox{
+    background-color: #515459;
+    border-radius: 5px;
+    width: 100%;
+	height: 23px;
+    border: 1px solid #0b6060;
+	margin-bottom: 6px;
+	
+ }
+ 
+.col1 .row_space{
+    height: 15px;
+}
+    .col1 .row_name1{
+    width: 220px;
+  	}
+    
+    .col1 .row_name2{
+       width: 32px;
+    }
+    
+    .col1 .row_name3{
+       width: 35px;
+    }
+    
+    .col1 .row_name4{
+       width: 35px;
+    }
+    
+    .col1 .row_name5{
+       width: 35px;
+    }
+
+    .col1 .row_name6{
+       width: 45px;
+    } 
+    
+    .col1 .row_name7{
+       width: 23px;
+    } 
+    
+    .col1 .row_name8{
+       width: 206px;
+    } 
+    
+    .col1 .row_name9{
+       width: 23px;
+    }  
+ 
+    
+.col1 .row_name_style{
+		font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+		font-size: 16px;
+	}
+	
+.col1 .cq_style{
+	padding-left:10px;
+	position: relative;
+	-webkit-filter: url('#faded-comp-jc0juwrzimg');
+	filter: url(#faded-comp-jc0jqzfkimg);
+	
+	}
+	
+.table_border_top{
+	border-top: 4px solid #0d5a66;
+}
+
+.table_border_bottom{
+	border-bottom: 4px solid #0d5a66;
+}
+
+.table_border_left{
+	border-left: 4px solid #0d5a66;
+}
+
+.table_border_right{
+	border-right: 4px solid #0d5a66;
+}
+
+.table_top_left_corner{
+	
+	border-top: 4px solid #0d5a66;
+	border-left: 4px solid #0d5a66;
+	border-radius: 8px 0px 0px 0px;
+}
+
+.table_top_right_corner{
+	
+	border-top: 4px solid #0d5a66;
+	border-right: 4px solid #0d5a66;
+	border-radius: 0px 8px 0px 0px;
+}
+
+.table_bottom_left_corner{
+	
+	border-bottom: 4px solid #0d5a66;
+	border-left: 4px solid #0d5a66;
+	border-radius: 0px 0px 0px 8px;
+}
+
+.table_bottom_right_corner{
+	
+	border-bottom: 4px solid #0d5a66;
+	border-right: 4px solid #0d5a66;
+	border-radius: 0px 0px 8px 0px;
+}
+
+.table_blank_left_right{
+	
+	border-left: 4px solid #0d5a66;
+	border-right: 4px solid #0d5a66;
+}
+
+.table_all_bottom{
+	border-bottom: 4px solid #0d5a66;
+	border-left: 4px solid #0d5a66;
+	
+	border-bottom: 4px solid #0d5a66;
+	border-right: 4px solid #0d5a66;
+	border-radius: 0px 0px 8px 8px;
+	
+}
+
+.table_all_top{
+	border-top: 4px solid #0d5a66;
+	border-left: 4px solid #0d5a66;
+	
+	border-top: 4px solid #0d5a66;
+	border-right: 4px solid #0d5a66;
+	border-radius: 8px 8px 0px 0px;
+}
+
+.col1 #row_name_padding{
+	
+	padding-left: 10px;
+}
+
+
+
+.col1 #cust_button{
+    
+    background: linear-gradient(to bottom, #0fc4c4 30%, #065656 60%);
+    border: 2px solid #046666;
+    margin-top: 30px;
+    margin-left: 380px;
+    border-radius: 8px;
+    width: 245px;
+    height: 42px;
+    font-weight:bold;
+    color: white;
+    }
+    .col1 #cust_button:hover{
+    background: linear-gradient(to bottom, #52c476 30%, #33a055 60%);
+    border: 2px solid #33a055;
+    border-radius: 8px;
+    width: 245px;
+    height: 42px;
+    font-weight:bold;
+    color: white;
+	}
+	
+span.generic_tpc_heading{
+	/*color: #93BC34;*/
+	color: #718A37;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.page-section.topic-activity-section{
+	padding-top: 20px;
+}
+
+span.topic-activity-title{
+	color: #93BC34;
+	font-weight: bold;
+	font-size: 20px;
+}
+/* complete body style ends*/

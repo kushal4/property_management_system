@@ -1,0 +1,19 @@
+/.gitattributes/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/.gitignore/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/.php_cs.dist/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/.sami.php/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/.scrutinizer.yml/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/.travis.yml/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/CHANGELOG.PHPExcel.md/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/CHANGELOG.md/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/CONTRIBUTING.md/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/LICENSE/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/composer.json/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/composer.lock/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/mkdocs.yml/1.1.1.1/Thu Mar  7 06:11:09 2019//
+/phpunit.xml.dist/1.1.1.1/Thu Mar  7 06:11:09 2019//
+D/.github////
+D/bin////
+D/docs////
+D/samples////
+D/src////

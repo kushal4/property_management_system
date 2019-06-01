@@ -1,0 +1,8 @@
+=========LOG START: 2019-05-30 12:59:50==========/home/steffi/Steffi_usr/stef/eecee_proj_new/eecee/swfm/test_curl_tree.php
+getting inside CurlSendPostJson
+the URL is :: http://192.168.0.12/enactl/actlApi.aspx/get_role_tree
+NOFUNC::cURL: START http://192.168.0.12/enactl/actlApi.aspx/get_role_tree
+NOFUNC::To cURL: {"param":{"key":"iYmgcY9E9cGg1zY8tvAeaNPffJRBSBdhT5c6t9ekc2znQJElODriqykUIHATH8w78jN6WbPtRZBhYmPVEpwOU50eVIyl9KdeF1oq5IPwy7QQxC6f1pObLinCstlOnnuH","client_id":null,"role_sig":null}}
+NOFUNC::From cURL: {"d":"{\"status\":55,\"message\":\"Invalid request\",\"p\":null}"}
+NOFUNC::cURL: END http://192.168.0.12/enactl/actlApi.aspx/get_role_tree
+From Curl: {"d":"{\"status\":55,\"message\":\"Invalid request\",\"p\":null}"}

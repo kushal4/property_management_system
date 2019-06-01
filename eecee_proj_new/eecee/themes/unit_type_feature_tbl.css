@@ -1,0 +1,80 @@
+table.unit_type_feat_tbl_sty{
+    border-collapse: collapse;
+    width: 50%;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.unit_type_feat_tbl_sty td,.unit_type_feat_tbl_sty th{
+    border: 1px solid transparent;
+    border-collapse: collapse;
+    padding: 7px;
+    color: white;
+}
+
+.unit_type_feat_tbl_sty tr th{
+    font-size: 15px;
+}
+.unit_type_feat_tbl_sty th{
+    width: 100%;
+}
+
+table.unit_type_feat_tbl_sty tr{
+    background-color: transparent;
+}
+
+table.attrib_tbl_sty tr:nth-child(odd){
+    /*background-color: grey;*/
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-style: italic;
+}
+
+table.attrib_tbl_sty tr:nth-child(even){
+    /*background-color: grey;*/
+    color: white;
+    border: none;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.attrib_accordion_style .ui-state-default, #tabs .attrib_accordion_style .ui-widget-content .ui-state-default, #tabs .attrib_accordion_style .ui-widget-header .ui-state-default, #tabs .attrib_accordion_style .ui-button, #tabs .attrib_accordion_style html .ui-button.ui-state-disabled :hover, #tabs .attrib_accordion_style html .ui-button.ui-state-disabled :active {
+    border: solid 1px #89c402;
+    background-color: #c5e679c7;
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size: 16px;
+    /*height: 15px;*/
+    color: #333232;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 2px 2px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px #8c7259cc;
+}
+
+.attrib_accordion_style.ui-accordion .ui-accordion-header{
+    padding: 0px ;
+}
+
+.attrib-accordion-page-section{
+    background-color: transparent;
+}
+
+.add_feature_plus_cont_style{
+    cursor: pointer;
+}
+
+.del_feat_btn_style{
+    vertical-align: middle;
+}
+
+/*
+.expand_div_style{
+    padding: 0px !important;
+    
+}
+*/

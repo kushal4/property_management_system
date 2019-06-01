@@ -1,0 +1,145 @@
+body {font-family: Arial;}
+* {box-sizing: border-box}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 28px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+  	
+	
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signupbtn{
+
+	margin: 16px;
+}
+
+button:hover {
+    opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+ 	padding: 16px;
+	width: 30%;
+	border: 1px solid black;
+	margin: auto;
+}
+
+.error_styles{
+	
+	color: red;
+	
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.login_button_style {
+	
+	width: 300px;
+	height:50px;
+	background-color: #4CAF50;
+	
+   margin-left: 500px;
+}
+
+.verification_heading_style{
+	
+	text-align: center;
+	margin-top: 200px;
+	font-size: 25px;
+	
+}
+
+.confirm_email_heading_style {
+	
+	font-size: 20px;
+	text-align: center;
+	margin-top: 200px;
+}
+.login_button_style a{
+	
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	
+   
+}
+
+
+body .success_pass_change{
+    
+    padding-top: 20px;
+}
+
+.success_pass_change{
+
+    margin-top: 80px; 
+    margin-left: 35%;
+    padding: 10px;
+    border: 1px solid black;
+    width: 350px;
+    height: 150px;
+}
+
+
+.success_pass_change .btn{
+    width: 200px;
+    margin-top: 40px;
+    margin-left: 60px;
+}
+
+.change_pass_spn{
+   
+    margin-left: 40px;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+       width: 100%;
+    }
+}

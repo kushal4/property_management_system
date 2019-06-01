@@ -1,0 +1,1487 @@
+* {
+    outline: none;
+}
+.headertab{
+    /*width: 640px;*/
+    margin-left: 22px;
+}
+
+/**************************************************
+Main Nevigation Styling: Begin
+***************************************************/
+
+#tabs {
+    width: 100%;
+    height: 500px;
+    margin-top:20px;
+}
+/*to override the default jquery ui css */
+#tabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor a{
+    /*margin-top: 15px;*/
+    color:white;
+    padding: 0px 0px;
+    font-size: 25px;
+    float:none;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    /*font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;*/
+    font-family: 'Segoe UI',SegoeUI,'Segoe WP',Tahoma,Arial,sans-serif;
+}
+
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#tabs.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: text;
+    color: orange;
+}
+
+#tabs > ul{
+    width: 15%;
+    float: left;
+    margin:0px;
+    padding:0px;
+}
+
+#tabs .first_part{
+    width: 70%;
+    position: relative;
+    float: left;
+   /*height: 100%;*/
+    /*border: 1px solid rgba(61, 155, 233, 1);*/
+    /*border: 1px solid linear-gradient(to right,rgba(61, 155, 233, 1), rgb(7,120,191));*/
+    /*background: rgba(61, 155, 233, 1);*/
+    /*background: linear-gradient(to right,rgba(61, 155, 233, 1), rgb(7,120,191));*/
+    font-weight: normal;
+    /*text-align: center;*/
+    /*font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;*/
+    /*font: 400 16px/24px Roboto,sans-serif;*/
+    font-size:13px;
+    color: black;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+#tabs .first_part:hover{
+    width: 70%;
+    position: relative;
+    float: left;
+    /*height: 100%;*/
+    border: 1px solid rgb(78, 80, 80);
+    /*background: rgb(78, 80, 80);*/
+    font-weight: bold;
+    /*text-align: center;*/
+    /*font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;*/
+    font: 400 16px/24px Roboto,sans-serif;
+    font-size: 13px;
+    color: orange;
+    margin-top: 0px;
+    border-radius: 5px;
+    
+    cursor: pointer;
+}
+
+#tabs .second_part{
+    height: 100%;
+   float: left;
+   width: 25%;
+   background-color: transparent;
+}
+
+/*li style spacing*/
+#tabs.ui-tabs .ui-tabs-nav li {
+    list-style: none;
+    float: left;
+    position: relative;
+    top: 0;
+    margin: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    border-bottom-width: 0;
+    padding: 0px;
+    white-space: nowrap;
+}
+    
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    /*margin: 1px .2em 0 0;*/
+    margin-bottom: 6px;
+    padding-bottom: 0px;
+}
+    
+#tabs.ui-tabs .ui-tabs-nav .sub_tab_wrapper_style {
+    margin-top: -4px;
+    margin-bottom: 4px;
+ }  
+    
+#tabs > .main_tabs, #tabs > .sub_tab_styles{
+    color: #AACBE0;
+    float: left;
+    width: 65%;
+    padding: 0px;
+}
+/*default*/
+#tabs .ui-state-default,
+#tabs.ui-widget-content .ui-state-default,
+#tabs .ui-widget-header .ui-state-default,
+/*#tabs .ui-button, */
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled :hover,
+html .ui-button.ui-state-disabled :active {
+    border: transparent;
+    background: transparent;
+    font-weight: normal;
+    /*text-align: center;*/
+    /*font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;*/
+    font: 400 16px/24px Roboto,sans-serif;
+    font-size:18px;
+    width: 100%;
+    /*height: 70px;*/
+    color: #454545;
+    margin-bottom: 0px;
+    border-radius: 0 15px 15px 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/*hover*/
+#tabs .ui-state-hover,
+#tabs.ui-widget-content .ui-state-hover,
+#tabs .ui-widget-header .ui-state-hover,
+#tabs .ui-state-focus,
+#tabs.ui-widget-content .ui-state-focus,
+#tabs .ui-widget-header .ui-state-focus
+/*#tabs .ui-button:hover,
+#tabs .ui-button:focus 
+*/
+{
+    border: transparent;
+    background: transparent;
+    font-weight: normal;
+    /*text-align: center;*/
+    /*font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;*/
+    font: 400 16px/24px Roboto,sans-serif;
+    font-size:18px;
+    width: 100%;
+    /*height: 70px;*/
+    color:orange;
+    margin-bottom: 0px;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*active*/
+#tabs .ui-state-active,
+#tabs.ui-widget-content .ui-state-active,
+#tabs .ui-widget-header .ui-state-active
+
+/*#tabs a.ui-button:active,
+#tabs .ui-button:active,
+#tabs .ui-button.ui-state-active:hover */
+{
+    border: transparent;
+    background: transparent;
+    font-weight: normal;
+    /*text-align: center;*/
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size:18px;
+    width: 100%;
+    height: 20px;
+    color: #ffffff;
+    /*margin-bottom: 5px;*/
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/*margin change after active*/
+#tabs.ui-tabs .ui-tabs-nav li .ui-tabs-active {
+    /*margin-bottom: 5px;*/
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    width:92px;
+     /*height: 23px;*/
+}
+
+/*tab control background and border color*/
+#tabs.ui-widget.ui-widget-content:not(.ui-dialog):not(.ui-dialog-titlebar) {
+    border: 1px solid black;
+    background-color: black;
+}
+
+/* ul colors*/
+#tabs .ui-widget-header:not(.ui-dialog):not(.ui-dialog-titlebar) {
+    
+    border: 1px solid black;
+    background: black;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .second_part{
+   /* margin-bottom: -1px;*/
+    /*padding-bottom: 1px;*/
+    float: left;
+    width: 0;
+    height: 0;
+    /*border-top: 40px solid transparent;*/
+    /*border-left: 40px solid rgba(43, 104, 156, 1);*/
+    /*border-bottom: 32px solid transparent;*/
+}
+
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .first_part{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    width: 70%;
+    position: relative;
+    float: left;
+    height: 100%;
+    border: 1px solid black;
+    /*border: 1px solid linear-gradient(to right, rgb(70,150,200),rgba(43, 104, 156, 1));*/
+    background: black;
+    /*background: linear-gradient(to right, rgb(70,150,200),rgba(43, 104, 156, 1) 50%);*/
+    font-weight: normal;
+    /*text-align: center;*/
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size: 13px;
+    color: black;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor,
+#tabs.ui-tabs .ui-tabs-nav li.ui-state-disabled .ui-tabs-anchor,
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: text;
+}
+/**************************************************
+Main Nevigation Styling: End
+***************************************************/
+
+
+
+.boxes {
+ position: relative;
+ float: left;
+ margin-top: 20px;
+ cursor: pointer;
+ width: 177px;
+ height: 166px;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ border-radius: 25px;
+ transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+ box-shadow: 2.12px 2.12px 4px 1px rgba(170,203,224,0.51);
+ background: rgba(0, 46, 93, 0.8) url(https://static.parastorage.com/services/skins/2.1229.79/images/wysiwyg/core/themes/base/shiny2button_bg.png) center top repeat-x;
+ border: solid rgba(1, 23, 46, 0.7) 2px;
+}
+
+.boxes:hover {
+ position: relative;
+ float: left;
+ margin-top: 20px;
+ cursor: pointer;
+ width: 177px;
+ height: 166px;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ border-radius: 25px;
+ transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+ box-shadow: 2.12px 2.12px 4px 1px rgba(170,203,224,0.51);
+ background: rgba(0, 26, 110, 0.5) url(https://static.parastorage.com/services/skins/2.1229.79/images/wysiwyg/core/themes/base/shiny2button_bg.png) center top repeat-x;
+ border: solid rgba(1, 23, 46, 0.7) 2px;
+}
+
+#box_center{
+    margin-left: 45px;
+}
+
+#box_right{
+    float: right;
+}
+
+.box_header{
+    position: relative;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box_para{
+    color: #AACBE0;
+    text-align: center;
+    font-family: helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;
+    font-size: 14px;
+}
+
+
+.heading_style{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    margin: 0px;
+}
+
+#tabs .ui-state-default a,
+#tabs .ui-state-default a:link,
+#tabs .ui-state-default a:visited,
+#tabs .sub_li_name_style{
+    color:white;
+    text-decoration: none;
+    padding: 0px;
+    /*font-size: 36px;*/
+}
+
+/*#tabs.ui-tabs-vertical .ui-tabs-nav li .sub_li_name_style{ */
+#tabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor.sub_li_name_style {
+    width: 100%; 
+    height: 10px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important; 
+    margin: 0px; 
+}
+
+#tabs.ui-tabs-vertical .ui-tabs-nav li .sub_li_style{ 
+    clear: left; 
+    width: 100%; 
+    height: 22px;
+    background-color: transparent;
+    border: transparent;
+    border-bottom-width: 1px !important;
+    border-right-width: 0 !important; 
+    margin: 0 -1px 2px 0;
+    border-radius: 0px;
+}
+
+#tabs .sub_li_style .first_part{
+    width: 70%;
+    position: resub_li_name_stylelative;
+   float: right;
+   height: 100%;
+   margin-left: 44px;
+   border: 1px solid rgba(61, 155, 233, 1);
+    background: rgba(61, 155, 233, 1);
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size:18px;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+/*#anchor_01, #anchor_02, #anchor_03 {*/
+#tabs.ui-tabs .ui-tabs-nav .ui-tabs-anchor.sub_li_name_style {  
+    padding: 0px;
+    padding-top: 3px;
+    color: white;
+    font-family: ariel;
+   font-size: 14px;
+   cursor: pointer;
+}
+
+#tabs.ui-tabs .ui-tabs-nav li.ui-tabs-active .first_part .sub_li_name_style{
+    width: 108px;
+    position: resub_li_name_stylelative;
+   float: right;
+   height: 100%;
+   margin-left: 0px;
+   border: 1px solid rgba(61, 155, 233, 1);
+    background: rgba(61, 155, 233, 1);;
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size:18px;
+    margin-bottom: 5px;
+    margin-top:-1px;
+    border-radius: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*
+#mysubtab_2-1 .first_part{
+    border-radius: 15px 0 0 0;
+}
+
+#mysubtab_2-3 .first_part{
+    border-radius: 0 0 15px 0;
+}
+
+#mysubtab_1-1 .first_part{
+    border-radius: 15px 0 0 0;
+}
+
+#mysubtab_1-3 .first_part{
+    border-radius: 0 0 15px 0;
+}
+*/
+
+#tabs .sub_tab_wrapper_style .first_part{
+    width: 20%;
+    border-radius: 0px;
+    height: 70px;
+    border: transparent;
+    background-color: rgba(43, 104, 156, 1);
+    cursor: default;
+}
+
+#tabs .sub_tab_wrapper_style .second_part{
+    width:35%;
+    height: 70px;
+}
+
+#tabs .sub_tab_wrapper_style ul{
+ height: 70px;
+ background-color: rgba(43, 104, 156, 1);
+ /*margin-top: -4px;*/
+ width:95px;
+ padding:0px;
+ border-radius: 0 0 15px 0;
+ font-weight: normal;
+ font-size: 16px;
+}
+
+#tabs .ui-state-default .tabs-tab_L1,
+#tabs .ui-widget-content .ui-state-default .tabs-tab_L1,
+#tabs .ui-widget-header .ui-state-default .tabs-tab_L1,
+#tabs .ui-button, 
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+html .ui-button.ui-state-disabled :hover,
+html .ui-button.ui-state-disabled :active {
+    border: transparent;
+    background: rgba(61, 155, 233, 1);
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size: 22px;
+    width: 95px;
+    color: #454545;
+    border-radius: 0 15px 15px 0;
+    font-weight: bold;
+    cursor: pointer;
+    /*margin-bottom: -1px;*/
+   height: 23px;
+   border-radius: 0px;
+}
+
+/*#tabs.ui-tabs .ui-tabs-nav .tabs-tab_L1 li.ui-tabs-active .ui-tabs-anchor ,
+#tabs.ui-tabs .ui-tabs-nav .tabs-tab_L1 li.ui-state-disabled .ui-tabs-anchor ,
+#tabs.ui-tabs .ui-tabs-nav .tabs-tab_L1 li.ui-tabs-loading .ui-tabs-anchor {
+    cursor: text;
+    font-size: 18px;
+}*/
+#tabs .tabs-tablist_L1 .tabs-tab_L1:last-child{
+    border-radius: 0 0 15px 0;
+    height: 28px;
+}
+
+#tabs .tabs-tablist_L1 .tabs-tab_L1:first-child{
+    border-radius: 15px 0 0 0;
+    margin-top: 0px;
+}
+
+.table_wrapper{
+    overflow:hidden;
+ overflow-y: scroll;
+    max-height: 180px;
+    border-radius: 5px;
+   border: solid white 2px;
+    /*margin-top: 20px;*/
+}
+
+table.generic_table{
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #08588a;
+    overflow: scroll;
+}
+
+div.generic-table-heading {
+    font-weight: bold;
+    color: #5eabdb;
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+
+table.generic_table th {
+ border-top: none;
+ border-bottom:none;
+ border-left:none;
+}
+
+table.generic_table td {
+ border-left: none;
+ border-bottom: none;
+}
+
+.generic_table_header{
+    background-color: #08588a;
+    width: 100%;
+    height: 25px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.generic_table_footer{
+    background-color: #08588a;
+    width: 100%;
+    height: 135px;
+    padding: 10px;
+    border-radius: 0px 0px 8px 8px;
+}
+
+.generic_table_head{
+    background-color: #08588a;
+    width: 100%;
+    height: 135px;
+    padding: 10px;
+}
+
+.client_table_cl{
+    max-height: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+.search_box{
+    float: right;
+    width: 150px;
+    height: 22px;
+    border-radius: 3px;
+   outline: 0;
+   border: 0;
+   box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+   background-color: rgba(255,255,255,0.8);
+}
+
+.generic_table td,.generic_table th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 7px;
+    color: black;
+}
+
+.generic_table th{
+    background-color: #08588a;
+}
+.generic_table a{
+    color: white;
+    text-decoration: none;
+}
+
+/*
+a.sort-by:before,
+a.sort-by:after {
+    border: 4px solid transparent;
+    content: "";
+    display: block;
+    height: 0;
+    right: 5px;
+    top: 60%;
+    position: absolute;
+    width: 0;
+}
+a.sort-by:before {
+    border-bottom-color: white;
+    margin-top: -9px;
+    position: relative;
+ float: right; 
+}
+a.sort-by:after {
+    border-top-color: white;
+    margin-top: 1px;
+    position: relative;
+ float: right;
+}   
+*/
+
+.generic_table tr:nth-child(odd){
+    background-color: #AACBE0;
+}
+
+.generic_table tr:nth-child(odd) a{
+    /*color: rgb(26, 24, 56);*/
+    color: #2d495b;
+}
+
+.generic_table tr:nth-child(odd) a.butt_anc_cls{
+    /*color: rgb(26, 24, 56);*/
+    color: black;
+}
+
+.generic_table tr:nth-child(even){
+    background-color: #174666;
+}
+
+.generic_table tr:nth-child(even) a{
+    color: white;
+}
+
+.generic_table tr:nth-child(even) a.butt_anc_cls{
+    color: black;
+}
+
+.generic_table tr:nth-child(odd) td{
+    /*color: rgb(26, 24, 56);*/
+    color: #2d495b;
+}
+
+.generic_table tr:nth-child(even) td{
+    color: white;
+}
+
+.sub_tab_head{
+    font-size: 24px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    font-weight: bold;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+}
+
+#network_list_page{
+    display: none;
+}
+
+#new_client_page{
+    display: none;
+}
+
+#generic_table_div{
+    display: none;
+ overflow-y: scroll;
+ max-height: 250px;
+ margin-top: 20px;
+ width: 380px;
+}
+
+#add_network_button{
+    border-radius: 5px;
+   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+   background: rgba(0, 77, 78, 1) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+   border: solid rgba(1, 177, 175, 1) 0px;
+   width: 263px;
+   height: 40px;
+   color: white;
+   font: normal normal 700 18px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+   font-weight: bold;
+   margin-top: 15px;
+   margin-left: 200px;
+   cursor: pointer;
+}
+
+#add_network_button:hover{
+    border-radius: 5px;
+   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+   background: rgba(0, 77, 78, 1) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+   border: solid rgba(1, 177, 175, 1) 0px;
+   width: 263px;
+   height: 40px;
+   color: white;
+   font: normal normal 700 18px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+   font-weight: bold;
+   margin-top: 15px;
+   margin-left: 200px;
+   cursor: pointer;
+}
+
+.sub_tab_wrapper_style{
+    display: none;
+}
+
+.network_name_buttons{
+    margin-top: 20px;
+}
+
+.network_name_input{
+    width: 250px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+}
+
+#add_client_table tbody tr{
+    color: black;
+   padding: 7px;
+}
+
+.generic_table#add_client_table{
+    border-collapse: collapse;
+    background-color: #053f63;
+    height: 30px;
+    overflow: auto;
+}
+
+.dropbtn {
+ color: white;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+}
+
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+.dropdown-content {
+ display: none;
+ position: absolute;
+ background-color: transparent;
+ min-width: 160px;
+ overflow: auto;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 1;
+ margin-left: -140px;
+}
+
+.dropdown-content #logout{
+ color: black;
+ padding-left: 16px;
+ padding-top: 10px;
+ text-decoration: none;
+ display: block;
+ height: 50px;
+ cursor: default;
+}
+
+.dropdown-content span {
+ color: black;
+ padding-left: 16px;
+ padding-right: 16px;
+ padding-top: 5px;
+ padding-bottom: 0px;
+ text-decoration: none;
+ display: block;
+ cursor: default;
+}
+
+.show {display:block;}
+
+#login_user_name{
+    font-weight: bold;
+}
+
+.logout_button_anchor{
+    text-decoration: none;
+    color: black;
+}
+
+.logout_button{
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    background-color: #AACBE0;
+    color: white;
+    border: 1px solid #AACBE0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid white;
+    margin-left: 150px;
+}
+
+.dropdown_container{
+    background-color: white;
+    border-radius: 8px;
+}
+/*
+
+#done_adding_client{
+    float: left;
+    margin-top: 15px;
+    margin-left: 210px;
+}
+*/
+#instance_prototype{
+    color: white;
+    font-family: Arial,Helvetica,sans-serif;
+    font-weight: bold;
+}
+
+#instance_prototype_div{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#network_name_span{
+    width: 200px;
+    height: 25px;
+    background-color: grey;
+}
+
+#network_page_test{
+    display: none;
+}
+
+#tabs-3{
+    float: left;
+    padding: 0px;
+}
+
+#tabs-3 .tarantoo_page_heading h2{
+    color: #AACBE0;
+}
+
+#add_new_topic_button{
+    border-radius: 5px;
+   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+   background: rgba(0, 77, 78, 1) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+   border: solid rgba(1, 177, 175, 1) 0px;
+   width: 263px;
+   height: 40px;
+   color: white;
+   font: normal normal 700 18px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+   font-weight: bold;
+   margin-top: 15px;
+   margin-left: 200px;
+   cursor: pointer;
+}
+
+#add_new_topic_button:hover{
+    border-radius: 5px;
+   transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+   background: rgba(0, 77, 78, 1) url(https://static.parastorage.com/services/skins/2.1229.80/images/wysiwyg/core/themes/base/shiny1button_bg.png) 50% 50% repeat-x;
+   border: solid rgba(1, 177, 175, 1) 0px;
+   width: 263px;
+   height: 40px;
+   color: white;
+   font: normal normal 700 18px/1.4em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+   font-weight: bold;
+   margin-top: 15px;
+   margin-left: 200px;
+   cursor: pointer;
+}
+
+#add_new_topic_page{
+    display: none;
+}
+
+.topic_select{
+    width: 250px;
+    height: 30px;
+}
+
+#add_new_topic_page span{
+    color: white;
+    font-size: 18px;
+}
+
+#topic_select_div{
+    margin-top: 15px;
+}
+
+.Tarantoo_inputs{
+    width: 200px;
+    height: 25px;
+    outline: 0;
+   border: 0;
+   border-radius: 5px;
+   box-shadow: inset 0 1px 2px rgba(0,0,0,.4);
+   background-color: rgba(255,255,255,0.8);
+}
+
+#adding_new_topic_div{
+    margin-top: 15px;
+}
+
+#adding_new_topic_div{
+    display: none;
+}
+
+.generic_table thead th{
+    color: #AACBE0;
+}
+
+.generic_table #topics_names_table tbody tr td{
+    height: 30px;
+}
+
+.topic_span{
+    
+    color: white;
+    font-size: 18px;
+    width: 100px;
+}
+
+.ajax_err_show {
+    display: block;
+}
+
+.ajax_err_show h2{
+    color: red;
+    font-weight:bold;
+    font-size: 12px;
+}
+
+.ajax_err_hide {
+    display: none;
+}
+
+.Tarantoo_buttons{
+    height: 30px;
+}
+
+.Tarantoo_buttons#back_to_topic_list_button{
+    margin-top: 50px;
+    margin-left: 80px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#modify_existing_topic_div{
+    display: none;
+}
+
+#network_instance_div{
+    display: none;
+}
+
+#create_new_topic_div{
+    display: none;
+}
+
+#network_list_page{
+
+    max-height: 1120px;
+}
+
+.generic_topic_table_div.topic_table_global{
+    max-height: 150px;
+    overflow-y: scroll;
+    /*margin-top: 20px;*/
+}
+
+.generic_topic_table_div.network_scope_topic_table{
+    max-height: 150px;
+    overflow-y: scroll;
+    /*margin-top: 20px;*/
+}
+
+.generic_topic_table_div.topic_table_instance{
+    max-height: 180px;
+    overflow-y: scroll;
+    /*margin-top: 20px;*/   
+}
+
+.generic_topic_table_div.table_wrapper{
+    max-height: 180px;
+    overflow-y: scroll;
+    /*margin-top: 20px;*/   
+}
+
+.network_name_instance_scope_name{
+
+    color: white;
+    font-weight: bold;
+}
+
+.session_dialog_box{
+    background-color: aliceblue;
+    color: black;
+}
+
+.done_adding_client_cont{
+    width:100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.network_name_buttons{
+    width: 100%;
+   text-align: center;
+}
+
+.message_dialog_span{
+    font-size: 12px;
+}
+
+.view_container{
+    width: 90%;
+}
+
+.page_heading_style_class{
+    font-weight: bold;
+}
+
+.page_heading_style_class.heading_keys_class{
+    color: white;
+}
+
+.page_heading_style_class.table_name_class{
+    color: #5eabdb;
+    font-size: 18px;
+    text-align: center;
+    width: 90%;
+}
+
+.page_heading_style_class.table_name_class.topic_table_name_cls{
+    margin-top: 20px;
+}
+
+.page_heading_style_class.table_name_class.inst_scp_topic_tbl_cls{
+    margin-top: 40px;
+}
+
+.view_container.network_list_view_container{
+    margin-top: 0px;
+}
+
+.generic_table_header.topic_table_header{
+    margin-top: 20px;
+}
+
+.the_selected_topic_slash{
+    color: white;
+ font-size: 18px;
+}
+
+.net-inst-tbl-cl-name{
+    width: 60%;
+}
+
+.net-inst-tbl-cl-act{
+    width: 40%;
+}
+
+.net-inst-act-but-c1{
+    width: 23%;
+    margin-right: 3px;
+    float: left;
+}
+
+.net-inst-act-but-c2{
+    width: 23%;
+    margin-right: 3px;
+    float: left;
+}
+
+.net-inst-act-but-c3{
+    width: 23%;
+    float: left;
+}
+
+/*generic button style for the buttons created using body_load function*/
+.generic_btn_style{
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #04b3ed, #05446e);
+    background-image: -moz-linear-gradient(top, #04b3ed, #05446e);
+    background-image: -ms-linear-gradient(top, #04b3ed, #05446e);
+    background-image: -o-linear-gradient(top, #04b3ed, #05446e);
+    background-image: linear-gradient(to bottom, #04b3ed, #05446e);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: auto;
+    /*float: left;*/
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.generic_btn_style:hover{
+    background: #3cb0fd;
+    background-image: -webkit-linear-gradient(to right, #05446e, #04b3ed);
+    background-image: -moz-linear-gradient(to right, #05446e, #04b3ed);
+    background-image: -ms-linear-gradient(to right, #05446e, #04b3ed);
+    background-image: -o-linear-gradient(to right, #05446e, #04b3ed);
+    background-image: linear-gradient(to right, #05446e, #04b3ed);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 5px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    /*width: 30%;*/
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.generic_btn_style.add_new_client_btn_cont{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.generic_btn_style.create_new_topic_btn_cont{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.generic_btn_style.import_public_butt_cont{
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.generic_btn_style.back_to_btn_cont{
+    float: left;
+}
+
+.generic_btn_style.back_butt_cont{
+    float: left;
+    width: 10%;
+}
+
+.action_buttons_cls{
+ background: #e6eaed;
+ background-image: -webkit-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -moz-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -ms-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -o-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: linear-gradient(to bottom, #e6eaed, #90cbeb);
+ -webkit-border-radius: 10;
+ -moz-border-radius: 10;
+ border-radius: 5px;
+ font-family: Arial;
+ /*color: black !important;*/
+ font-size: 14px;
+ padding: 3px 8px 3px 8px;
+ text-align: center;
+ cursor: pointer;
+}
+
+div.butt_cont_cls{
+ background: #e6eaed;
+ background-image: -webkit-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -moz-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -ms-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: -o-linear-gradient(top, #e6eaed, #90cbeb);
+ background-image: linear-gradient(to bottom, #e6eaed, #90cbeb);
+ -webkit-border-radius: 10;
+ -moz-border-radius: 10;
+ border-radius: 5px;
+ font-family: Arial;
+ /*color: black !important;*/
+ font-size: 14px;
+ padding: 3px 8px 3px 8px;
+ text-align: center;
+ /*height: 10px;*/
+ cursor: pointer;
+}
+
+a.butt_anc_cls{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #2d495b;
+}
+
+a.btn_anc{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.generic_table tr:nth-child(odd) a.action_buttons_cls{
+    /*color: rgb(26, 24, 56);*/
+    color: rgb(3, 3, 99);
+}
+
+.generic_table tr:nth-child(even) a.action_buttons_cls{
+    color: rgb(3, 3, 99);
+}
+
+.action_buttons_cls:hover {
+    background: #9fd5f2;
+    background-image: -webkit-linear-gradient(top, #9fd5f2, #62afe3);
+    background-image: -moz-linear-gradient(top, #9fd5f2, #62afe3);
+    background-image: -ms-linear-gradient(top, #9fd5f2, #62afe3);
+    background-image: -o-linear-gradient(top, #9fd5f2, #62afe3);
+    background-image: linear-gradient(to bottom, #9fd5f2, #62afe3);
+    text-decoration: none;
+}
+
+/*.ui-widget-content.btn {*/
+#create_new_topic_div .btn {
+    color: #ffffff;
+}
+
+.create_button_cls{
+    background: #b6e0fa;
+    background-image: -webkit-linear-gradient(top, #e6eaed, #90cbeb);
+    background-image: -moz-linear-gradient(top, #e6eaed, #90cbeb);
+    background-image: -ms-linear-gradient(top, #e6eaed, #90cbeb);
+    background-image: -o-linear-gradient(top, #e6eaed, #90cbeb);
+    background-image: linear-gradient(to bottom, #e6eaed, #90cbeb);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 5px;
+    font-family: Arial;
+    color: rgb(3, 3, 99);
+    font-size: 14px;
+    padding: 5px 15px 5px 15px;
+    text-decoration: none;
+    cursor: pointer;
+    width: 55%;
+}
+
+.client_del_butt_cls{
+    margin-right: 3px;
+    float: left;
+}
+
+.page-section{
+    /*border: 2px solid #AACBE0;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: rgb(42,69,86);
+}
+
+.page-section-heading {
+    width: 100%;
+    float:left;
+}
+
+.add_new_client_btn_div_cls{
+    margin-bottom: 20px; 
+}
+/*
+div.client_list_table_wrapper {
+    width:100%;
+}
+*/
+.client-list-col1 {
+    width: 65%;
+}
+
+.instance-list-col1{
+    width: 55%;
+}
+
+.imp-pub-top-list-inst-col1{
+    width: 55%;
+}
+
+.network-list-col1{
+    width: 60%;
+}
+
+.imp-pub-top-list-col1{
+    width: 60%;
+}
+
+#client_list tr.odd_row td{
+    color: blue;
+}
+
+#client_list tr.even_row td{
+    color: green;
+}
+
+/*
+#imported_public_topic_list_global tr.odd_row td{
+    color:#2d495b;;
+}
+
+#imported_public_topic_list_global tr.even_row td{
+    color: white;
+}
+
+#imported_public_topic_list_instance tr.odd_row td{
+    color: #2d495b;
+}
+
+#imported_public_topic_list_instance tr.even_row td{
+    color: white;
+}
+*/
+
+#topic_inst_scope_tbl tr.odd_row td{
+    color: blue;
+}
+
+#topic_inst_scope_tbl tr.even_row td{
+    color: green;
+}
+
+.action_buttons_cls.un-import_butt_cls{
+    width: 45%;
+}
+
+/*body {
+    background: #A1CEEA;
+    font-family: roboto;
+ }
+*/
+
+ input[type=radio] {
+    position: absolute;
+    visibility: hidden;
+    display: none;
+ }
+ 
+ label {
+    color: #A1CEEA;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1px 6px;
+ }
+ 
+ input[type=radio]:checked + label {
+    color: #20273D;
+ background: #A1CEEA;
+ }
+ 
+ label + input[type=radio] + label {
+    border-left: solid 3px #A1CEEA;
+ }
+ 
+ .radio-group {
+    border: solid 2px #A1CEEA;
+    display: inline-block;
+    margin: 0px;
+    border-radius: 5px;
+    overflow: hidden;
+ }
+
+.public-global-radio{
+    float: right;
+    margin-top: -40px;
+}
+
+div.public-global-radio-for-tbl{
+    /*margin-left: 160px;*/
+    float: right;
+    font-size:12px;
+    font-weight: normal;
+}
+
+#imported_global_topic_list_instance{
+    display: none;
+}
+
+#imp_glo_tpc_inst{
+    display: none;
+}
+
+.heading_key{
+    color: white;
+    font-weight: bold;
+}
+
+.heading_value{
+    color: #AACBE0;
+}
+
+.topic_scope{
+    display: none;
+}
+
+/*
+#global_accordion .ui-accordion-content
+{
+ min-height: 100px;
+ max-height: 400px;
+}
+*/
+
+/**************************************************
+Generic Accordion Styling: Begin
+***************************************************/
+#tabs .genereic_accordion {
+    width: 100%;
+}
+
+#tabs .genereic_accordion .ui-state-default,
+#tabs .genereic_accordion .ui-widget-content .ui-state-default,
+#tabs .genereic_accordion .ui-widget-header .ui-state-default,
+#tabs .genereic_accordion .ui-button, 
+
+/* We use html here because we need a greater specificity to make sure disabled
+works properly when clicked or hovered */
+#tabs .genereic_accordion html .ui-button.ui-state-disabled :hover,
+#tabs .genereic_accordion html .ui-button.ui-state-disabled :active {
+    /*border: solid 1px #c5c5c5;*/
+    border: none;
+    /*background-color: rgb(8,88,138);*/
+    background-color:#243a5e;
+    
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size:18px;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+#tabs .genereic_accordion .ui-state-hover,
+#tabs .genereic_accordion .ui-widget-content .ui-state-hover,
+#tabs .genereic_accordion .ui-widget-header .ui-state-hover,
+#tabs .genereic_accordion .ui-state-focus,
+#tabs .genereic_accordion .ui-widget-content .ui-state-focus,
+#tabs .genereic_accordion .ui-widget-header .ui-state-focus,
+#tabs .genereic_accordion .ui-button:hover,
+#tabs .genereic_accordion .ui-button:focus {
+    border: none;
+    /*background-color: rgb(8,88,138);*/
+    /*background: linear-gradient(to bottom right,rgb(70,150,200), rgb(29, 71, 98));*/
+    background:#1e355a;
+    font-weight: normal;
+    text-align: center;
+    font-family: helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;
+    font-size:18px;
+    width: 100%;
+    height: auto;
+    color: white;
+    margin-bottom: 5px;
+    border-radius: 0px;
+    font-weight: bold;
+    cursor: pointer;
+}
+/**************************************************
+Generic Accordion Styling: End
+***************************************************/
+
+/*font: 400 16px/24px Roboto,sans-serif;*/
+#tabs .genereic_accordion .ui-widget-content {
+	border: 1px solid black;
+	background:black;
+	color: #333333;
+}

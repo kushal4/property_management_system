@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    li{
+        list-style:none;
+    padding:0;
+    margin:0;
+    }
+    </style>
+</head>
+<body>
+    <ul id="nav_cont">
+    <li>
+        <a>Home</a>
+    </li>
+    <li>
+    <a>Tom</a>
+    </li>
+    <li>
+    <a>Jerry</a>
+    </li>
+    <li>
+    <a>Mouse</a>
+    </li>
+    <li>
+    <a>Elephant</a>
+    </li>
+    <li>
+    <a>Tree</a>
+    </li>
+    <li>
+    <a>TicTac</a>
+    </li>
+    <li>
+    <a>Tomer</a>
+    </li>
+</ul>
+</body>

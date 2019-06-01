@@ -1,0 +1,32 @@
+.container{
+	width: 500px;
+    height: 295px;
+    border: 1px solid black;
+    padding: 30px;
+    margin-left: 33.3%;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.update_button{
+	background-color: #4CAF50;
+	width: 70px;
+	height: 30px;
+	border: none;
+	color: white;
+	margin-top: 10px;
+}
+
+.password_input_style{
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.main_heading{
+	font-size: 20px;
+}
+
+.input_style{
+	margin-bottom: 5px;
+    margin-top: 2px;
+}
